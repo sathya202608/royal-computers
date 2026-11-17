@@ -1,0 +1,48 @@
+# ==========================================
+# Royal Computers Xerox Shop - .gitignore
+# ==========================================
+
+# 1. Dependencies (Node.js & React/Vite)
+node_modules/
+*/node_modules/
+backend/node_modules/
+my-app name/node_modules/
+
+# 2. Environment Variables & Secret Credentials (NEVER UPLOAD)
+.env
+.env.*
+*.env
+backend/.env
+backend/.env.*
+my-app name/.env
+my-app name/.env.*
+!.env.example
+!backend/.env.example
+
+# 3. Log files
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+backend/server.log
+backend/server-err.log
+
+# 4. Production & Build Outputs
+dist/
+dist-ssr/
+my-app name/dist/
+build/
+
+# 5. OS and IDE specific files
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

@@ -1,0 +1,19 @@
+{
+  "name": "royal-computers-app",
+  "version": "1.0.0",
+  "description": "Royal Computers Xerox Shop - Management System with Node.js & MongoDB Backend",
+  "scripts": {
+    "start": "concurrently -n \"backend,frontend\" -c \"blue,green\" \"npm run start:backend\" \"npm run start:frontend\"",
+    "dev": "concurrently -n \"backend,frontend\" -c \"blue,green\" \"npm run dev:backend\" \"npm run start:frontend\"",
+    "dev:backend": "cd backend && npm run dev",
+    "start:backend": "cd backend && npm start",
+    "dev:frontend": "cd \"my-app name\" && npm run dev",
+    "start:frontend": "cd \"my-app name\" && npm run dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^10.0.6"
+  }
+}
