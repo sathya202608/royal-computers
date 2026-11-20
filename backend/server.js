@@ -40,6 +40,15 @@ app.use(cors({
 }));
 app.use(express.json());
 
+// Root Endpoint (For Render Service Verification)
+app.get('/', (req, res) => {
+  res.json({
+    message: 'Royal Computers Xerox Shop Backend API is running live!',
+    status: 'online',
+    healthCheck: '/api/health',
+  });
+});
+
 // Health Check
 app.get('/api/health', (req, res) => {
   const isConnected = require('mongoose').connection.readyState === 1;
